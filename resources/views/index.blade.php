@@ -81,10 +81,10 @@
                                 masa depan.</p>
                         </div>
                     </div>
-                    <a href="{{ url('/ctfSmaSmk.html') }}" class="btn-modern mr-2">
+                    <a href="{{ route('ctf.sma') }}" class="btn-modern mr-2">
                         CTF <i class="fas fa-arrow-right"></i>
                     </a>
-                    <a href="{{ url('/lktiSmaSmk.html') }}" class="btn-modern mr-2">
+                    <a href="{{ route('lkti.sma') }}" class="btn-modern mr-2">
                         LKTI <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -126,7 +126,7 @@
                                 kompleks dan kompetitif, meliputi kriptografi, forensik digital, dan web security.</p>
                         </div>
                     </div>
-                    <a href="{{ url('/ctfMahasiswa.html') }}" class="btn-modern mr-2">
+                    <a href="{{ route('ctf.mahasiswa') }}" class="btn-modern mr-2">
                         CTF <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
@@ -226,7 +226,7 @@
                 <div class="courses-text">
                     <h4 class="text-center text-white px-3">LKTI SMA/SMK</h4>
                     <div class="w-100 bg-white text-center p-4">
-                        <a class="btn btn-primary" href="lktiSmaSmk.html">Detail</a>
+                        <a class="btn btn-primary" href="{{ route('lkti.sma') }}">Detail</a>
                     </div>
                 </div>
             </div>
@@ -235,7 +235,7 @@
                 <div class="courses-text">
                     <h4 class="text-center text-white px-3">Lomba CTF SMA/SMK</h4>
                     <div class="w-100 bg-white text-center p-4">
-                        <a class="btn btn-primary" href="ctfSmaSmk.html">Detail</a>
+                        <a class="btn btn-primary" href="{{ route('ctf.sma') }}">Detail</a>
                     </div>
                 </div>
             </div>
@@ -244,7 +244,7 @@
                 <div class="courses-text">
                     <h4 class="text-center text-white px-3">Lomba CTF Mahasiswa</h4>
                     <div class="w-100 bg-white text-center p-4">
-                        <a class="btn btn-primary" href="ctfMahasiswa.html">Detail</a>
+                        <a class="btn btn-primary" href="{{ route('ctf.mahasiswa') }}">Detail</a>
                     </div>
                 </div>
             </div>

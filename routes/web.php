@@ -16,12 +16,20 @@ use Illuminate\Support\Facades\Route;
 // Home route returning index.blade.php
 Route::get('/', function () {
     return view('index');
-});
+})->name('home');
 
-// Dynamic route to support any requested .html page
-Route::get('/{page}.html', function ($page) {
-    if (view()->exists($page)) {
-        return view($page);
-    }
-    abort(404);
-});
+Route::get('/about', function () {
+    return view('about');
+})->name('about');
+
+Route::get('/ctf-sma-smk', function () {
+    return view('ctfSmaSmk');
+})->name('ctf.sma');
+
+Route::get('/lkti-sma-smk', function () {
+    return view('lktiSmaSmk');
+})->name('lkti.sma');
+
+Route::get('/ctf-mahasiswa', function () {
+    return view('ctfMahasiswa');
+})->name('ctf.mahasiswa');

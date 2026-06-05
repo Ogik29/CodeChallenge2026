@@ -60,35 +60,35 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end px-lg-3" id="navbarCollapse">
             <div class="navbar-nav py-0">
-                <a href="{{ url('/') }}"
-                    class="nav-item nav-link {{ request()->is('/') ? 'active' : '' }}">Home</a>
+                <a href="{{ route('home') }}"
+                    class="nav-item nav-link {{ request()->routeIs('home') ? 'active' : '' }}">Home</a>
 
-                <a href="{{ url('/about.html') }}"
-                    class="nav-item nav-link {{ request()->is('about.html') ? 'active' : '' }}">About</a>
+                <a href="{{ route('about') }}"
+                    class="nav-item nav-link {{ request()->routeIs('about') ? 'active' : '' }}">About</a>
 
                 <div class="nav-item dropdown">
                     <a href="#"
-                        class="nav-link dropdown-toggle {{ request()->is('lktiSmaSmk.html') || request()->is('ctfSmaSmk.html') ? 'active' : '' }}"
+                        class="nav-link dropdown-toggle {{ request()->routeIs('lkti.sma') || request()->routeIs('ctf.sma') ? 'active' : '' }}"
                         data-toggle="dropdown">Kompetisi SMA/SMK</a>
                     <div class="dropdown-menu m-0 border-0 shadow-sm rounded-lg">
-                        <a href="{{ url('/ctfSmaSmk.html') }}"
-                            class="dropdown-item {{ request()->is('ctfSmaSmk.html') ? 'active' : '' }}">CTF</a>
-                        <a href="{{ url('/lktiSmaSmk.html') }}"
-                            class="dropdown-item {{ request()->is('lktiSmaSmk.html') ? 'active' : '' }}">LKTI</a>
+                        <a href="{{ route('ctf.sma') }}"
+                            class="dropdown-item {{ request()->routeIs('ctf.sma') ? 'active' : '' }}">CTF</a>
+                        <a href="{{ route('lkti.sma') }}"
+                            class="dropdown-item {{ request()->routeIs('lkti.sma') ? 'active' : '' }}">LKTI</a>
                     </div>
                 </div>
 
                 <div class="nav-item dropdown">
                     <a href="#"
-                        class="nav-link dropdown-toggle {{ request()->is('ctfMahasiswa.html') ? 'active' : '' }}"
+                        class="nav-link dropdown-toggle {{ request()->routeIs('ctf.mahasiswa') ? 'active' : '' }}"
                         data-toggle="dropdown">Kompetisi Mahasiswa</a>
                     <div class="dropdown-menu m-0 border-0 shadow-sm rounded-lg">
-                        <a href="{{ url('/ctfMahasiswa.html') }}"
-                            class="dropdown-item {{ request()->is('ctfMahasiswa.html') ? 'active' : '' }}">Capture The Flag</a>
+                        <a href="{{ route('ctf.mahasiswa') }}"
+                            class="dropdown-item {{ request()->routeIs('ctf.mahasiswa') ? 'active' : '' }}">Capture The Flag</a>
                     </div>
                 </div>
 
-                <a href="{{ url('/') }}" class="nav-item nav-link">Talkshow</a>
+                <a href="{{ route('home') }}" class="nav-item nav-link">Talkshow</a>
             </div>
         </div>
     </nav>
