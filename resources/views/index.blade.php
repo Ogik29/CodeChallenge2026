@@ -20,7 +20,7 @@
                             class="btn-modern mb-3 mb-sm-0 mr-sm-3">
                             Daftar Sekarang <i class="fas fa-arrow-right"></i>
                         </a>
-                        <a href="#" class="btn btn-outline-primary"
+                        <a href="https://linktr.ee/guidebookCODEChallange" target="_blank" class="btn btn-outline-primary"
                             style="border-radius: 50px; padding: 12px 35px; font-weight: 600;">
                             Guidebook <i class="fas fa-download ml-2"></i>
                         </a>
@@ -259,7 +259,7 @@
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSe28esd9213ofRzAqcFFgq9bLlFhF3CbBhhbl1qkFJgBrtKZA/viewform" target="_blank"
                     class="btn-animated-gradient m-2"> DAFTAR LOMBA <i
                         class="fas fa-user-plus btn-animated-gradient-icon"></i> </a>
-                <a href="#" class="btn-animated-gradient m-2"> GUIDEBOOK <i
+                <a href="https://linktr.ee/guidebookCODEChallange" target="_blank" class="btn-animated-gradient m-2"> GUIDEBOOK <i
                         class="fas fa-download btn-animated-gradient-icon"></i> </a>
             </div>
         </div>
