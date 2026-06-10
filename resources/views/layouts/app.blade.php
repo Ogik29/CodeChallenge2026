@@ -131,6 +131,58 @@
                 filter: drop-shadow(0 0 25px rgba(236, 72, 153, 0.4));
             }
         }
+
+        .btn-start-countdown {
+            background: linear-gradient(135deg, #7974e8 0%, #c02070 100%);
+            color: #ffffff;
+            border: none;
+            padding: 16px 36px;
+            font-size: 16px;
+            font-weight: 700;
+            border-radius: 50px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            cursor: pointer;
+            box-shadow: 0 0 20px rgba(99, 102, 241, 0.4), 0 0 40px rgba(236, 72, 153, 0.2);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            outline: none;
+        }
+
+        .btn-start-countdown::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(255, 255, 255, 0.2),
+                transparent
+            );
+            transition: 0.5s;
+        }
+
+        .btn-start-countdown:hover::before {
+            left: 100%;
+        }
+
+        .btn-start-countdown:hover {
+            transform: scale(1.05);
+            color: #ffffff;
+            text-decoration: none;
+            box-shadow: 0 0 30px rgba(99, 102, 241, 0.6), 0 0 60px rgba(236, 72, 153, 0.4);
+        }
+
+        .btn-start-countdown:active {
+            transform: scale(0.98);
+        }
     </style>
 </head>
 
@@ -153,10 +205,21 @@
                 <img src="{{ asset('img/logo_code_challange.png') }}" alt="C.O.D.E Challenge Logo" style="height: 100px; width: auto;" />
             </div>
             <h5 class="countdown-tagline text-uppercase text-primary mb-4" style="letter-spacing: 3px; font-size: 14px; font-weight: 700;">Cyber Competition & Digital Excellence</h5>
-            <div class="countdown-number-wrapper">
-                <div id="countdown-number" class="countdown-number">5</div>
+            
+            <!-- Start Button Container -->
+            <div id="countdown-start-container" class="mb-4">
+                <button id="btn-start-countdown" class="btn-start-countdown">
+                    PENCET :3
+                </button>
             </div>
-            <div class="countdown-subtext mt-4" style="font-size: 15px; font-weight: 600; letter-spacing: 1px; color: #a5b4fc;">BOOTING UP CYBER ENVIRONMENT...</div>
+
+            <!-- Countdown Elements (initially hidden) -->
+            <div id="countdown-animation-container" style="display: none;">
+                <div class="countdown-number-wrapper">
+                    <div id="countdown-number" class="countdown-number">5</div>
+                </div>
+                <div class="countdown-subtext mt-4" style="font-size: 15px; font-weight: 600; letter-spacing: 1px; color: #a5b4fc;">BOOTING UP CYBER ENVIRONMENT...</div>
+            </div>
         </div>
     </div>
 
@@ -165,46 +228,54 @@
             const countdownShown = sessionStorage.getItem('countdownShown');
             const preloader = document.getElementById('preloader');
             const countdownOverlay = document.getElementById('intro-countdown-overlay');
+            const btnStart = document.getElementById('btn-start-countdown');
+            const startContainer = document.getElementById('countdown-start-container');
+            const animationContainer = document.getElementById('countdown-animation-container');
 
             if (!countdownShown) {
                 if (preloader) preloader.style.display = 'none';
                 if (countdownOverlay) countdownOverlay.style.display = 'flex';
                 document.body.style.overflow = 'hidden';
 
-                let count = 5;
-                const countdownNumber = document.getElementById('countdown-number');
-                const countdownSubtext = document.querySelector('.countdown-subtext');
-                
-                function runCountdown() {
-                    if (count > 0) {
-                        countdownNumber.textContent = count;
-                        
-                        const loadingTexts = [
-                            "BOOTING UP...",
-                            "INITIALIZING...",
-                            "ALMOST...",
-                            "GETTING READY...",
-                            "WELCOME TO CODE CHALLENGE!"
-                        ];
-                        countdownSubtext.textContent = loadingTexts[5 - count];
-                        
-                        countdownNumber.classList.remove('tick-animate');
-                        countdownNumber.offsetWidth; // force reflow
-                        countdownNumber.classList.add('tick-animate');
-                        
-                        count--;
-                        setTimeout(runCountdown, 2000);
-                    } else {
-                        countdownOverlay.classList.add('fade-out');
-                        document.body.style.overflow = 'auto';
-                        sessionStorage.setItem('countdownShown', 'true');
-                        setTimeout(() => {
-                            countdownOverlay.remove();
-                        }, 800);
+                btnStart.addEventListener('click', function() {
+                    startContainer.style.display = 'none';
+                    animationContainer.style.display = 'block';
+
+                    let count = 5;
+                    const countdownNumber = document.getElementById('countdown-number');
+                    const countdownSubtext = document.querySelector('.countdown-subtext');
+                    
+                    function runCountdown() {
+                        if (count > 0) {
+                            countdownNumber.textContent = count;
+                            
+                            const loadingTexts = [
+                                "BOOTING UP...",
+                                "INITIALIZING...",
+                                "ALMOST...",
+                                "GETTING READY...",
+                                "WELCOME TO CODE CHALLENGE!"
+                            ];
+                            countdownSubtext.textContent = loadingTexts[5 - count];
+                            
+                            countdownNumber.classList.remove('tick-animate');
+                            countdownNumber.offsetWidth; // force reflow
+                            countdownNumber.classList.add('tick-animate');
+                            
+                            count--;
+                            setTimeout(runCountdown, 2000);
+                        } else {
+                            countdownOverlay.classList.add('fade-out');
+                            document.body.style.overflow = 'auto';
+                            sessionStorage.setItem('countdownShown', 'true');
+                            setTimeout(() => {
+                                countdownOverlay.remove();
+                            }, 800);
+                        }
                     }
-                }
-                
-                setTimeout(runCountdown, 200);
+                    
+                    runCountdown();
+                });
             } else {
                 if (countdownOverlay) countdownOverlay.remove();
             }

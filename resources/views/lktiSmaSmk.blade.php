@@ -68,56 +68,50 @@
             <div class="comp-timeline">
                 <div class="comp-timeline-item" data-aos="fade-right" data-aos-duration="600" data-aos-delay="100">
                     <div class="comp-timeline-card">
-                        <h6>Pendaftaran + Pengumpulan Abstrak</h6>
-                        <p class="comp-timeline-date"><i class="fas fa-clock"></i> 16 Juli - 30 Agustus 2026</p>
+                        <h6>Pendaftaran Peserta dan Seleksi Administrasi dan Teknis Awal, Seleksi Abstrak</h6>
+                        <p class="comp-timeline-date"><i class="fas fa-clock"></i> 11 Juni - 30 Agustus 2026</p>
                     </div>
                 </div>
                 <div class="comp-timeline-item" data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
-                    <div class="comp-timeline-card">
-                        <h6>Koreksi Abstrak</h6>
-                        <p class="comp-timeline-date"><i class="fas fa-clock"></i> 31 Agustus - 5 September 2026</p>
-                    </div>
-                </div>
-                <div class="comp-timeline-item" data-aos="fade-right" data-aos-duration="600" data-aos-delay="300">
                     <div class="comp-timeline-card">
                         <h6>Pengumuman Lolos Penyisihan</h6>
                         <p class="comp-timeline-date"><i class="fas fa-clock"></i> 6 September 2026</p>
                     </div>
                 </div>
+                <div class="comp-timeline-item" data-aos="fade-right" data-aos-duration="600" data-aos-delay="300">
+                    <div class="comp-timeline-card">
+                        <h6>Penyusunan Proposal Lomba Babak Penyisihan (Early Bid)</h6>
+                        <p class="comp-timeline-date"><i class="fas fa-clock"></i> 8 September - 15 September 2026</p>
+                    </div>
+                </div>
                 <div class="comp-timeline-item" data-aos="fade-left" data-aos-duration="600" data-aos-delay="400">
                     <div class="comp-timeline-card">
-                        <h6>Pengumpulan Full Paper + Pembayaran (Early Bid)</h6>
-                        <p class="comp-timeline-date"><i class="fas fa-clock"></i> 8 September - 15 September 2026</p>
+                        <h6>Penyusunan Proposal Lomba Babak Penyisihan (Reguler)</h6>
+                        <p class="comp-timeline-date"><i class="fas fa-clock"></i> 16 September - 23 September 2026</p>
                     </div>
                 </div>
                 <div class="comp-timeline-item" data-aos="fade-right" data-aos-duration="600" data-aos-delay="500">
                     <div class="comp-timeline-card">
-                        <h6>Pengumpulan Full Paper + Pembayaran (Reguler)</h6>
-                        <p class="comp-timeline-date"><i class="fas fa-clock"></i> 16 September - 23 September 2026</p>
+                        <h6>Pengumuman Finalis & Waiting list</h6>
+                        <p class="comp-timeline-date"><i class="fas fa-clock"></i> 3 Oktober 2026</p>
                     </div>
                 </div>
                 <div class="comp-timeline-item" data-aos="fade-left" data-aos-duration="600" data-aos-delay="600">
                     <div class="comp-timeline-card">
-                        <h6>Koreksi Full Paper</h6>
-                        <p class="comp-timeline-date"><i class="fas fa-clock"></i> 24 September - 2 Oktober 2026</p>
+                        <h6>Technical Meeting Babak Final</h6>
+                        <p class="comp-timeline-date"><i class="fas fa-clock"></i> TBA</p>
                     </div>
                 </div>
                 <div class="comp-timeline-item" data-aos="fade-right" data-aos-duration="600" data-aos-delay="700">
                     <div class="comp-timeline-card">
-                        <h6>Pengumuman Finalis + Waiting List</h6>
-                        <p class="comp-timeline-date"><i class="fas fa-clock"></i> 3 Oktober 2026</p>
+                        <h6>Pembuatan PPT (Finalis)</h6>
+                        <p class="comp-timeline-date"><i class="fas fa-clock"></i> TBA</p>
                     </div>
                 </div>
                 <div class="comp-timeline-item" data-aos="fade-left" data-aos-duration="600" data-aos-delay="800">
                     <div class="comp-timeline-card">
-                        <h6>Pembuatan PPT (Finalis)</h6>
-                        <p class="comp-timeline-date"><i class="fas fa-clock"></i> 4 Oktober - 10 Oktober 2026</p>
-                    </div>
-                </div>
-                <div class="comp-timeline-item" data-aos="fade-right" data-aos-duration="600" data-aos-delay="900">
-                    <div class="comp-timeline-card">
-                        <h6>Final (Offline)</h6>
-                        <p class="comp-timeline-date"><i class="fas fa-clock"></i> 11 Oktober 2026</p>
+                        <h6>Babak Final</h6>
+                        <p class="comp-timeline-date"><i class="fas fa-clock"></i> TBA</p>
                     </div>
                 </div>
             </div>
