@@ -412,6 +412,10 @@ h6 {
   opacity: 0.85;
 }
 
+.sponsorship-grid img {
+  height: 110px;
+}
+
 /* Fix navbar z-index */
 .navbar-glass {
   z-index: 9999 !important;

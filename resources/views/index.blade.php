@@ -16,11 +16,11 @@
                     <p class="lead text-muted mb-5">Inovasi Teknologi Berbasis Cyber & IOT untuk Smart City &
                         Smart Farming sebagai solusi masa depan yang berkelanjutan.</p>
                     <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3">
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfQKkcpgvf850BUb-F53pFS-fDcGSV313tMIz92G0YsSr0_wg/viewform"
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe28esd9213ofRzAqcFFgq9bLlFhF3CbBhhbl1qkFJgBrtKZA/viewform?usp=send_form" target="_blank"
                             class="btn-modern mb-3 mb-sm-0 mr-sm-3">
                             Daftar Sekarang <i class="fas fa-arrow-right"></i>
                         </a>
-                        <a href="https://linktr.ee/guidebookcodex" class="btn btn-outline-primary"
+                        <a href="#" class="btn btn-outline-primary"
                             style="border-radius: 50px; padding: 12px 35px; font-weight: 600;">
                             Guidebook <i class="fas fa-download ml-2"></i>
                         </a>
@@ -149,17 +149,13 @@
                         <div class="position-absolute w-100 h-100 rounded-lg" style="top: 20px; left: -20px; background: linear-gradient(135deg, var(--primary, #007bff) 0%, rgba(0,123,255,0.2) 100%); opacity: 0.2; z-index: 0;"></div>
 
                         <div class="premium-card p-3 position-relative bg-white shadow-lg" style="border-radius: 20px; z-index: 1; transform: perspective(1000px) rotateY(2deg); transition: transform 0.5s ease;" onmouseover="this.style.transform='perspective(1000px) rotateY(0deg) scale(1.02)'" onmouseout="this.style.transform='perspective(1000px) rotateY(2deg) scale(1)'">
-                            <img src="{{ asset('img/ce.JPG') }}" alt="About Image" class="img-fluid"
+                            <img src="{{ asset('img/ce2.JPG') }}" alt="About Image" class="img-fluid"
                                 style="object-fit: cover; height: 480px; width: 100%; border-radius: 15px;" />
 
                             <!-- Floating Badge -->
                             <div class="position-absolute shadow-sm" style="bottom: 40px; right: -30px; background: white; padding: 15px 25px; border-radius: 15px; display: flex; align-items: center; gap: 15px; animation: floatBadge 3s ease-in-out infinite;">
                                 <div class="bg-primary text-white d-flex align-items-center justify-content-center rounded-circle shadow-sm" style="width: 45px; height: 45px; margin-right: 15px;">
                                     <i class="fas fa-trophy" style="font-size: 1.2rem;"></i>
-                                </div>
-                                <div>
-                                    <h6 class="m-0 font-weight-bold text-dark">Kompetisi Nasional</h6>
-                                    <small class="text-muted">Tingkat Pelajar & Mahasiswa</small>
                                 </div>
                             </div>
                         </div>
@@ -252,22 +248,19 @@
 
         <div class="container text-center mt-5 pt-3 d-flex flex-column align-items-center">
             <div class="mb-3">
-                <a href="https://drive.google.com/drive/folders/1qfZQiq2JRemefrbJmWr7ug5P3k8ZyNQq"
+                <a href="#"
                     class="btn-animated-gradient">
-                    Download Twibbon & Caption
+                    Download Twibbon & Caption (TBA)
                     <i class="fas fa-cloud-download-alt btn-animated-gradient-icon"></i>
                 </a>
             </div>
 
             <div class="d-flex justify-content-center flex-wrap">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfQKkcpgvf850BUb-F53pFS-fDcGSV313tMIz92G0YsSr0_wg/viewform"
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSe28esd9213ofRzAqcFFgq9bLlFhF3CbBhhbl1qkFJgBrtKZA/viewform" target="_blank"
                     class="btn-animated-gradient m-2"> DAFTAR LOMBA <i
                         class="fas fa-user-plus btn-animated-gradient-icon"></i> </a>
-                <a href="https://linktr.ee/guidebookcodex" class="btn-animated-gradient m-2"> GUIDEBOOK <i
+                <a href="#" class="btn-animated-gradient m-2"> GUIDEBOOK <i
                         class="fas fa-download btn-animated-gradient-icon"></i> </a>
-                <a href="https://linktr.ee/registcodechallenge?utm_source=linktree_admin_share"
-                    class="btn-animated-gradient m-2"> CONTACT PERSON <i
-                        class="fas fa-user btn-animated-gradient-icon"></i> </a>
             </div>
         </div>
     </div>
@@ -279,14 +272,14 @@
             <div data-aos="fade-up" class="mb-5 pb-3">
                 <h6 class="text-secondary text-uppercase font-weight-bold mb-3" style="letter-spacing: 2px;">Our
                     Supporters</h6>
-                <h3 class="font-weight-bold mb-4">Collaboration With</h3>
+                {{-- <h3 class="font-weight-bold mb-4">Collaboration With</h3>
                 <img src="{{ asset('img/logoCyco.jpg') }}" alt="Cyco" class="img-fluid"
-                    style="max-width: 220px; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.05));" />
+                    style="max-width: 220px; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.05));" /> --}}
             </div>
 
             <div data-aos="fade-up" data-aos-delay="100" class="mb-5 pb-3">
                 <h3 class="font-weight-bold mb-4">Sponsorship</h3>
-                <div class="sponsor-grid">
+                <div class="sponsor-grid sponsorship-grid">
                     <img src="{{ asset('img/logoTelyu.png') }}" alt="Telkom University" />
                     <img src="{{ asset('img/kemahasiswaanTelyuSby.png') }}" alt="BEM TELU" />
                 </div>
@@ -307,6 +300,42 @@
         </div>
     </div>
 
+    <!-- Social Media Section Start -->
+    <div class="container-fluid py-5" style="background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%); position: relative; overflow: hidden;">
+        <!-- Glowing background blobs -->
+        <div style="position: absolute; width: 300px; height: 300px; background: rgba(99, 102, 241, 0.12); filter: blur(80px); border-radius: 50%; top: -100px; left: -50px;"></div>
+        <div style="position: absolute; width: 300px; height: 300px; background: rgba(236, 72, 153, 0.12); filter: blur(80px); border-radius: 50%; bottom: -100px; right: -50px;"></div>
+
+        <div class="container text-center py-4" data-aos="fade-up">
+            <h6 class="text-uppercase font-weight-bold mb-3" style="letter-spacing: 2px; color: #a5b4fc;">Stay Connected</h6>
+            <h2 class="display-5 font-weight-bold text-white mb-4">Our Social Media</h2>
+            <p class="text-light-50 mb-5 mx-auto" style="max-width: 600px; opacity: 0.8; color: #cbd5e1;">
+                Ikuti perkembangan terbaru dan informasi penting lainnya melalui kanal media sosial resmi kami.
+            </p>
+            <div class="d-flex justify-content-center flex-wrap align-items-center">
+                <!-- Instagram Button -->
+                <a href="https://www.instagram.com/code.challenge.it?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="btn-premium-social instagram-btn m-3" target="_blank">
+                    <span class="social-icon-wrapper"><i class="fab fa-instagram"></i></span>
+                    <span class="social-text-wrapper">
+                        <span class="social-subtitle">Follow Us on</span>
+                        <span class="social-title">Instagram</span>
+                    </span>
+                </a>
+                
+                <!-- Linktree/Contact Button -->
+                <a href="https://linktr.ee/codechallange?utm_source=linktree_profile_share&ltsid=519cc021-4aa1-48a5-8810-6e11b92d5e56" class="btn-premium-social linktree-btn m-3" target="_blank">
+                    <span class="social-icon-wrapper"><i class="fas fa-link"></i></span>
+                    <span class="social-text-wrapper">
+                        <span class="social-subtitle">Get in Touch</span>
+                        <span class="social-title">Linktree / CP</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Social Media Section End -->
+
+
 @endsection
 
 @section('extra-css')
@@ -315,6 +344,88 @@
         0%   { transform: translateY(0px); }
         50%  { transform: translateY(-10px); }
         100% { transform: translateY(0px); }
+    }
+
+    .btn-premium-social {
+        display: inline-flex;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 16px;
+        padding: 16px 28px;
+        color: #ffffff;
+        text-decoration: none !important;
+        transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        backdrop-filter: blur(10px);
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    }
+    
+    .btn-premium-social::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+        transition: opacity 0.4s ease;
+        opacity: 1;
+        z-index: 1;
+    }
+
+    .btn-premium-social:hover {
+        transform: translateY(-5px);
+        color: #ffffff !important;
+        border-color: rgba(255, 255, 255, 0.35);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .instagram-btn:hover {
+        background: linear-gradient(135deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+        border-color: transparent;
+    }
+
+    .linktree-btn:hover {
+        background: linear-gradient(135deg, #39e09b 0%, #16a34a 100%);
+        border-color: transparent;
+    }
+
+    .social-icon-wrapper {
+        font-size: 28px;
+        margin-right: 18px;
+        z-index: 2;
+        transition: transform 0.3s ease;
+    }
+
+    .btn-premium-social:hover .social-icon-wrapper {
+        transform: scale(1.15) rotate(-5deg);
+    }
+
+    .social-text-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        z-index: 2;
+        text-align: left;
+    }
+
+    .social-subtitle {
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        opacity: 0.75;
+        margin-bottom: 2px;
+        font-weight: 600;
+        color: #ffffff;
+    }
+
+    .social-title {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        color: #ffffff;
     }
 </style>
 @endsection

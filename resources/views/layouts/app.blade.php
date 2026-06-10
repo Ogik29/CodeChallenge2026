@@ -33,6 +33,105 @@
 
     <!-- Extra CSS (per-page overrides, e.g. competition-pages.css) -->
     @yield('extra-css')
+
+    <!-- Intro Countdown Overlay CSS -->
+    <style>
+        .intro-countdown-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #090d16 0%, #0f172a 50%, #1e1b4b 100%);
+            z-index: 100000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.8s cubic-bezier(0.77, 0, 0.175, 1), opacity 0.8s ease;
+            overflow: hidden;
+        }
+
+        .intro-countdown-overlay.fade-out {
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(-100%);
+        }
+
+        .countdown-content {
+            max-width: 500px;
+            width: 90%;
+            transform: translateY(0);
+            transition: transform 0.6s ease;
+        }
+
+        .countdown-logo {
+            animation: logoPulse 2s infinite ease-in-out;
+        }
+
+        .countdown-logo img {
+            filter: drop-shadow(0 0 15px rgba(99, 102, 241, 0.25));
+        }
+
+        .countdown-number-wrapper {
+            height: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .countdown-number {
+            font-size: 110px;
+            font-weight: 900;
+            color: #ffffff;
+            text-shadow: 0 0 30px rgba(99, 102, 241, 0.6), 0 0 60px rgba(99, 102, 241, 0.3);
+            font-family: 'Outfit', sans-serif;
+            line-height: 1;
+            opacity: 0;
+            transform: scale(0.5);
+        }
+
+        .countdown-number.tick-animate {
+            animation: numberTick 2s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+        }
+
+        @keyframes numberTick {
+            0% {
+                opacity: 0;
+                transform: scale(0.3) rotate(-10deg);
+                filter: blur(5px);
+            }
+            30% {
+                opacity: 1;
+                transform: scale(1.1) rotate(0deg);
+                filter: blur(0);
+            }
+            50% {
+                transform: scale(1);
+            }
+            90% {
+                opacity: 1;
+                transform: scale(0.95);
+                filter: blur(0);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(0.8) translateY(-20px);
+                filter: blur(3px);
+            }
+        }
+
+        @keyframes logoPulse {
+            0%, 100% {
+                transform: scale(1);
+                filter: drop-shadow(0 0 15px rgba(99, 102, 241, 0.25));
+            }
+            50% {
+                transform: scale(1.03);
+                filter: drop-shadow(0 0 25px rgba(236, 72, 153, 0.4));
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -46,6 +145,71 @@
             <div class="loader-text">Loading CODE Challenge...</div>
         </div>
     </div>
+
+    <!-- Intro Countdown Overlay -->
+    <div id="intro-countdown-overlay" class="intro-countdown-overlay" style="display: none;">
+        <div class="countdown-content text-center">
+            <div class="countdown-logo mb-3">
+                <img src="{{ asset('img/logo_code_challange.png') }}" alt="C.O.D.E Challenge Logo" style="height: 100px; width: auto;" />
+            </div>
+            <h5 class="countdown-tagline text-uppercase text-primary mb-4" style="letter-spacing: 3px; font-size: 14px; font-weight: 700;">Cyber Competition & Digital Excellence</h5>
+            <div class="countdown-number-wrapper">
+                <div id="countdown-number" class="countdown-number">5</div>
+            </div>
+            <div class="countdown-subtext mt-4" style="font-size: 15px; font-weight: 600; letter-spacing: 1px; color: #a5b4fc;">BOOTING UP CYBER ENVIRONMENT...</div>
+        </div>
+    </div>
+
+    <script>
+        (function() {
+            const countdownShown = sessionStorage.getItem('countdownShown');
+            const preloader = document.getElementById('preloader');
+            const countdownOverlay = document.getElementById('intro-countdown-overlay');
+
+            if (!countdownShown) {
+                if (preloader) preloader.style.display = 'none';
+                if (countdownOverlay) countdownOverlay.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+
+                let count = 5;
+                const countdownNumber = document.getElementById('countdown-number');
+                const countdownSubtext = document.querySelector('.countdown-subtext');
+                
+                function runCountdown() {
+                    if (count > 0) {
+                        countdownNumber.textContent = count;
+                        
+                        const loadingTexts = [
+                            "BOOTING UP...",
+                            "INITIALIZING...",
+                            "ALMOST...",
+                            "GETTING READY...",
+                            "WELCOME TO CODE CHALLENGE!"
+                        ];
+                        countdownSubtext.textContent = loadingTexts[5 - count];
+                        
+                        countdownNumber.classList.remove('tick-animate');
+                        countdownNumber.offsetWidth; // force reflow
+                        countdownNumber.classList.add('tick-animate');
+                        
+                        count--;
+                        setTimeout(runCountdown, 2000);
+                    } else {
+                        countdownOverlay.classList.add('fade-out');
+                        document.body.style.overflow = 'auto';
+                        sessionStorage.setItem('countdownShown', 'true');
+                        setTimeout(() => {
+                            countdownOverlay.remove();
+                        }, 800);
+                    }
+                }
+                
+                setTimeout(runCountdown, 200);
+            } else {
+                if (countdownOverlay) countdownOverlay.remove();
+            }
+        })();
+    </script>
 
     <!-- ==========================================
          NAVBAR
@@ -113,11 +277,11 @@
                 </div>
 
                 <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up" data-aos-delay="100">
-                    <h4>Contact Info</h4>
                     <div class="contact-info mt-4">
                         <p><i class="fas fa-map-marker-alt"></i> <span>Telkom University Surabaya</span></p>
-                        <p><i class="fas fa-phone-alt"></i> <span>nomor</span></p>
-                        {{-- <p><i class="fas fa-envelope"></i> <span>Hidupjokowi@gmail.com</span></p> --}}
+                        <p><i class="fab fa-instagram"></i> <span>@code.challenge.it</span></p>
+                        <p><i class="fab fa-instagram"></i> <span>@it.telkomsurabaya</span></p>
+                        <p><i class="fab fa-instagram"></i> <span>@himatisi.telkomuniversitysby</span></p>
                     </div>
                 </div>
 

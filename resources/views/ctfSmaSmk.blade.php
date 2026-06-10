@@ -175,14 +175,14 @@
                 <p class="comp-cta-desc">Daftarkan dirimu sekarang dan tunjukkan kemampuan terbaikmu!</p>
 
                 <div class="comp-cta-buttons">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfQKkcpgvf850BUb-F53pFS-fDcGSV313tMIz92G0YsSr0_wg/viewform"
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfQKkcpgvf850BUb-F53pFS-fDcGSV313tMIz92G0YsSr0_wg/viewform" target="_blank"
                         class="comp-btn comp-btn-primary">
                         DAFTAR SEKARANG <i class="fas fa-user-plus"></i>
                     </a>
-                    <a href="https://linktr.ee/guidebookcodex" class="comp-btn comp-btn-outline">
+                    <a href="https://linktr.ee/guidebookcodex" target="_blank" class="comp-btn comp-btn-outline">
                         GUIDEBOOK <i class="fas fa-download"></i>
                     </a>
-                    <a href="https://linktr.ee/registcodechallenge?utm_source=linktree_admin_share"
+                    <a href="https://linktr.ee/registcodechallenge?utm_source=linktree_admin_share" target="_blank"
                         class="comp-btn comp-btn-outline">
                         CONTACT PERSON <i class="fas fa-user"></i>
                     </a>
