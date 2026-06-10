@@ -68,44 +68,44 @@
             <div class="comp-timeline">
                 <div class="comp-timeline-item" data-aos="fade-right" data-aos-duration="600" data-aos-delay="100">
                     <div class="comp-timeline-card">
-                        <h6>Pendaftaran</h6>
-                        <p class="comp-timeline-date"><i class="fas fa-clock"></i> -</p>
+                        <h6>Pendaftaran Peserta</h6>
+                        <p class="comp-timeline-date"><i class="fas fa-clock"></i> 11 Juni - 30 Juni 2026</p>
                     </div>
                 </div>
                 <div class="comp-timeline-item" data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
                     <div class="comp-timeline-card">
                         <h6>Technical Meeting Babak Penyisihan</h6>
-                        <p class="comp-timeline-date"><i class="fas fa-clock"></i> -</p>
+                        <p class="comp-timeline-date"><i class="fas fa-clock"></i> 17 September 2026</p>
                     </div>
                 </div>
                 <div class="comp-timeline-item" data-aos="fade-right" data-aos-duration="600" data-aos-delay="300">
                     <div class="comp-timeline-card">
                         <h6>Pengerjaan Babak Penyisihan</h6>
-                        <p class="comp-timeline-date"><i class="fas fa-clock"></i> -</p>
+                        <p class="comp-timeline-date"><i class="fas fa-clock"></i> 20 September 2026</p>
                     </div>
                 </div>
                 <div class="comp-timeline-item" data-aos="fade-left" data-aos-duration="600" data-aos-delay="400">
                     <div class="comp-timeline-card">
-                        <h6>Pengumuman Peserta yang Lolos ke Tahap Final</h6>
-                        <p class="comp-timeline-date"><i class="fas fa-clock"></i> -</p>
+                        <h6>Pengumuman Finalis</h6>
+                        <p class="comp-timeline-date"><i class="fas fa-clock"></i> 23 September 2026</p>
                     </div>
                 </div>
                 <div class="comp-timeline-item" data-aos="fade-right" data-aos-duration="600" data-aos-delay="500">
                     <div class="comp-timeline-card">
                         <h6>Technical Meeting Babak Final</h6>
-                        <p class="comp-timeline-date"><i class="fas fa-clock"></i> -</p>
+                        <p class="comp-timeline-date"><i class="fas fa-clock"></i> TBA</p>
                     </div>
                 </div>
                 <div class="comp-timeline-item" data-aos="fade-left" data-aos-duration="600" data-aos-delay="600">
                     <div class="comp-timeline-card">
                         <h6>Persiapan Babak Final</h6>
-                        <p class="comp-timeline-date"><i class="fas fa-clock"></i> -</p>
+                        <p class="comp-timeline-date"><i class="fas fa-clock"></i> TBA</p>
                     </div>
                 </div>
                 <div class="comp-timeline-item" data-aos="fade-right" data-aos-duration="600" data-aos-delay="700">
                     <div class="comp-timeline-card">
                         <h6>Babak Final</h6>
-                        <p class="comp-timeline-date"><i class="fas fa-clock"></i> -</p>
+                        <p class="comp-timeline-date"><i class="fas fa-clock"></i> TBA</p>
                     </div>
                 </div>
             </div>
@@ -175,23 +175,17 @@
                 <p class="comp-cta-desc">Daftarkan dirimu sekarang dan tunjukkan kemampuan terbaikmu!</p>
 
                 <div class="comp-cta-buttons">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfQKkcpgvf850BUb-F53pFS-fDcGSV313tMIz92G0YsSr0_wg/viewform" target="_blank"
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe28esd9213ofRzAqcFFgq9bLlFhF3CbBhhbl1qkFJgBrtKZA/viewform" target="_blank"
                         class="comp-btn comp-btn-primary">
                         DAFTAR SEKARANG <i class="fas fa-user-plus"></i>
                     </a>
-                    <a href="https://linktr.ee/guidebookcodex" target="_blank" class="comp-btn comp-btn-outline">
+                    <a href="https://linktr.ee/guidebookCODEChallange" target="_blank" class="comp-btn comp-btn-outline">
                         GUIDEBOOK <i class="fas fa-download"></i>
                     </a>
-                    <a href="https://linktr.ee/registcodechallenge?utm_source=linktree_admin_share" target="_blank"
+                    <a href="https://api.whatsapp.com/send/?phone=6282125471784&text&type=phone_number&app_absent=0" target="_blank"
                         class="comp-btn comp-btn-outline">
                         CONTACT PERSON <i class="fas fa-user"></i>
                     </a>
-                </div>
-
-                <div class="comp-extend-notice">
-                    <i class="fas fa-calendar-alt"></i>
-                    <span class="extend-badge">Extend</span>
-                    <span>Pendaftaran! Jangan sampai ketinggalan!</span>
                 </div>
             </div>
         </div>
