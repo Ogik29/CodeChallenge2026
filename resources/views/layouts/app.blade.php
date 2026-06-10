@@ -84,7 +84,7 @@
                         data-toggle="dropdown">Kompetisi Mahasiswa</a>
                     <div class="dropdown-menu m-0 border-0 shadow-sm rounded-lg">
                         <a href="{{ route('ctf.mahasiswa') }}"
-                            class="dropdown-item {{ request()->routeIs('ctf.mahasiswa') ? 'active' : '' }}">Capture The Flag</a>
+                            class="dropdown-item {{ request()->routeIs('ctf.mahasiswa') ? 'active' : '' }}">CTF</a>
                     </div>
                 </div>
 
