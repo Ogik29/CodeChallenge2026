@@ -323,7 +323,7 @@
                     </div>
                 </div>
 
-                <a href="{{ route('home') }}" class="nav-item nav-link">Talkshow</a>
+                <a href="{{ route('home') }}" class="nav-item nav-link">Showcase</a>
             </div>
         </div>
     </nav>

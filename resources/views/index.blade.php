@@ -16,7 +16,7 @@
                     <p class="lead text-muted mb-5">Inovasi Teknologi Berbasis Cyber & IOT untuk Smart City &
                         Smart Farming sebagai solusi masa depan yang berkelanjutan.</p>
                     <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3">
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe28esd9213ofRzAqcFFgq9bLlFhF3CbBhhbl1qkFJgBrtKZA/viewform?usp=send_form" target="_blank"
+                        <a href="https://linktr.ee/codechallange?utm_source=linktree_profile_share&ltsid=519cc021-4aa1-48a5-8810-6e11b92d5e56" target="_blank"
                             class="btn-modern mb-3 mb-sm-0 mr-sm-3">
                             Daftar Sekarang <i class="fas fa-arrow-right"></i>
                         </a>
@@ -250,15 +250,12 @@
             <div class="mb-3">
                 <a href="#"
                     class="btn-animated-gradient">
-                    Download Twibbon & Caption (TBA)
+                    Twibbon & Caption (TBA)
                     <i class="fas fa-cloud-download-alt btn-animated-gradient-icon"></i>
                 </a>
             </div>
 
             <div class="d-flex justify-content-center flex-wrap">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSe28esd9213ofRzAqcFFgq9bLlFhF3CbBhhbl1qkFJgBrtKZA/viewform" target="_blank"
-                    class="btn-animated-gradient m-2"> DAFTAR LOMBA <i
-                        class="fas fa-user-plus btn-animated-gradient-icon"></i> </a>
                 <a href="https://linktr.ee/guidebookCODEChallange" target="_blank" class="btn-animated-gradient m-2"> GUIDEBOOK <i
                         class="fas fa-download btn-animated-gradient-icon"></i> </a>
             </div>
@@ -281,7 +278,7 @@
                 <h3 class="font-weight-bold mb-4">Sponsorship</h3>
                 <div class="sponsor-grid sponsorship-grid">
                     <img src="{{ asset('img/logoTelyu.png') }}" alt="Telkom University" />
-                    <img src="{{ asset('img/kemahasiswaanTelyuSby.png') }}" alt="BEM TELU" />
+                    <img src="{{ asset('img/logo_prodi_it.png') }}" alt="Prodi" />
                 </div>
             </div>
 
@@ -293,7 +290,7 @@
                     <img src="{{ asset('img/logoHMSI.png') }}" alt="HMSI" />
                     <img src="{{ asset('img/infoLomba.png') }}" alt="Info Lomba" />
                     <img src="{{ asset('img/himaRPL.png') }}" alt="HIMA RPL" />
-                    <img src="{{ asset('img/smkTelkomMalang.png') }}" alt="SMK Telkom" />
+                    {{-- <img src="{{ asset('img/smkTelkomMalang.png') }}" alt="SMK Telkom" /> --}}
                     <img src="{{ asset('img/himaITPolinema.png') }}" alt="HIMA IT Polinema" />
                 </div>
             </div>
