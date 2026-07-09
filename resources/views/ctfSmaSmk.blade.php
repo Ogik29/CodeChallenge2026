@@ -68,50 +68,51 @@
             <div class="comp-timeline">
                 <div class="comp-timeline-item" data-aos="fade-right" data-aos-duration="600" data-aos-delay="100">
                     <div class="comp-timeline-card">
-                        <h6>Pendaftaran Peserta (Early Bid)</h6>
-                        <p class="comp-timeline-date"><i class="fas fa-clock"></i> 11 Juni - 30 Juni 2026</p>
+                        <div class="comp-timeline-step">1</div>
+                        <h6>Pendaftaran (Early Bird)</h6>
+                        <p class="comp-timeline-date"><i class="fas fa-clock"></i> 06 Juli - 20 Juli 2026</p>
                     </div>
                 </div>
                 <div class="comp-timeline-item" data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
                     <div class="comp-timeline-card">
-                        <h6>Pendaftaran Peserta (Reguler)</h6>
-                        <p class="comp-timeline-date"><i class="fas fa-clock"></i> 1 Juli - 1 Agustus 2026</p>
+                        <div class="comp-timeline-step">2</div>
+                        <h6>Pendaftaran (Reguler)</h6>
+                        <p class="comp-timeline-date"><i class="fas fa-clock"></i> 21 Juli - 16 Agustus 2026</p>
                     </div>
                 </div>
                 <div class="comp-timeline-item" data-aos="fade-right" data-aos-duration="600" data-aos-delay="300">
                     <div class="comp-timeline-card">
+                        <div class="comp-timeline-step">3</div>
                         <h6>Technical Meeting Babak Penyisihan</h6>
                         <p class="comp-timeline-date"><i class="fas fa-clock"></i> 17 September 2026</p>
                     </div>
                 </div>
                 <div class="comp-timeline-item" data-aos="fade-left" data-aos-duration="600" data-aos-delay="400">
                     <div class="comp-timeline-card">
+                        <div class="comp-timeline-step">4</div>
                         <h6>Pengerjaan Babak Penyisihan</h6>
-                        <p class="comp-timeline-date"><i class="fas fa-clock"></i> 20 September 2026</p>
+                        <p class="comp-timeline-date"><i class="fas fa-clock"></i> 19 September 2026</p>
                     </div>
                 </div>
                 <div class="comp-timeline-item" data-aos="fade-right" data-aos-duration="600" data-aos-delay="500">
                     <div class="comp-timeline-card">
+                        <div class="comp-timeline-step">5</div>
                         <h6>Pengumuman Finalis</h6>
                         <p class="comp-timeline-date"><i class="fas fa-clock"></i> 23 September 2026</p>
                     </div>
                 </div>
                 <div class="comp-timeline-item" data-aos="fade-left" data-aos-duration="600" data-aos-delay="600">
                     <div class="comp-timeline-card">
+                        <div class="comp-timeline-step">6</div>
                         <h6>Technical Meeting Babak Final</h6>
-                        <p class="comp-timeline-date"><i class="fas fa-clock"></i> TBA</p>
+                        <p class="comp-timeline-date"><i class="fas fa-clock"></i> 17 Oktober 2026</p>
                     </div>
                 </div>
                 <div class="comp-timeline-item" data-aos="fade-right" data-aos-duration="600" data-aos-delay="700">
                     <div class="comp-timeline-card">
-                        <h6>Persiapan Babak Final</h6>
-                        <p class="comp-timeline-date"><i class="fas fa-clock"></i> TBA</p>
-                    </div>
-                </div>
-                <div class="comp-timeline-item" data-aos="fade-left" data-aos-duration="600" data-aos-delay="800">
-                    <div class="comp-timeline-card">
+                        <div class="comp-timeline-step">7</div>
                         <h6>Babak Final</h6>
-                        <p class="comp-timeline-date"><i class="fas fa-clock"></i> TBA</p>
+                        <p class="comp-timeline-date"><i class="fas fa-clock"></i> 25 Oktober 2026</p>
                     </div>
                 </div>
             </div>
@@ -127,20 +128,9 @@
                 <h2>Penghargaan Juara</h2>
                 <p class="comp-subtitle">CTF SMA/SMK</p>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
-                    <div class="comp-reward-card gold">
-                        <div class="comp-trophy-container"><i class="fas fa-trophy"></i></div>
-                        <p class="comp-rank">Champion</p>
-                        <h3 class="comp-rank-title">Juara 1</h3>
-                        <div class="comp-reward-divider"></div>
-                        <p class="comp-reward-detail">Uang Pembinaan</p>
-                        <div class="comp-reward-bonus">
-                            <i class="fas fa-plus-circle"></i> Sertifikat Penghargaan & piala
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="250">
+            <div class="row justify-content-center align-items-center">
+                <!-- Juara 2 -->
+                <div class="col-lg-4 col-md-6 mb-4 order-2 order-lg-1" data-aos="fade-up" data-aos-duration="600" data-aos-delay="250">
                     <div class="comp-reward-card silver">
                         <div class="comp-trophy-container"><i class="fas fa-trophy"></i></div>
                         <p class="comp-rank">Runner Up</p>
@@ -152,7 +142,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
+                <!-- Juara 1 (Featured) -->
+                <div class="col-lg-4 col-md-6 mb-4 order-1 order-lg-2" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                    <div class="comp-reward-card gold featured-reward">
+                        <div class="gold-special-badge"><i class="fas fa-crown"></i> JUARA UTAMA</div>
+                        <div class="comp-trophy-container"><i class="fas fa-trophy"></i></div>
+                        <p class="comp-rank">Champion</p>
+                        <h3 class="comp-rank-title">Juara 1</h3>
+                        <div class="comp-reward-divider"></div>
+                        <p class="comp-reward-detail">Uang Pembinaan</p>
+                        <div class="comp-reward-bonus">
+                            <i class="fas fa-plus-circle"></i> Sertifikat Penghargaan & piala
+                        </div>
+                    </div>
+                </div>
+                <!-- Juara 3 -->
+                <div class="col-lg-4 col-md-6 mb-4 order-3" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
                     <div class="comp-reward-card bronze">
                         <div class="comp-trophy-container"><i class="fas fa-trophy"></i></div>
                         <p class="comp-rank">3rd Place</p>

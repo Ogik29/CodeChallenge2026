@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+*
+!data/
+!.gitignore
+=======
 /.phpunit.cache
 /node_modules
 /public/build
@@ -16,3 +21,4 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+>>>>>>> b6826b210cf6902e11031229304985195aa43f6a

@@ -20,9 +20,8 @@
                             class="btn-modern mb-3 mb-sm-0 mr-sm-3">
                             Daftar Sekarang <i class="fas fa-arrow-right"></i>
                         </a>
-                        <a href="https://linktr.ee/guidebookCODEChallange" target="_blank" class="btn btn-outline-primary"
-                            style="border-radius: 50px; padding: 12px 35px; font-weight: 600;">
-                            Guidebook <i class="fas fa-download ml-2"></i>
+                        <a href="https://linktr.ee/guidebookCODEChallange" target="_blank" class="btn-modern-outline">
+                            Guidebook <i class="fas fa-download"></i>
                         </a>
                     </div>
                 </div>
@@ -286,12 +285,23 @@
                 <h3 class="font-weight-bold mb-4">Media Partners</h3>
                 <div class="sponsor-grid">
                     <img src="{{ asset('img/zonaLomba.jpg') }}" alt="Zona Lomba" />
-                    <img src="{{ asset('img/HMIT ITS.png') }}" alt="HMIT ITS" />
-                    <img src="{{ asset('img/logoHMSI.png') }}" alt="HMSI" />
-                    <img src="{{ asset('img/infoLomba.png') }}" alt="Info Lomba" />
                     <img src="{{ asset('img/himaRPL.png') }}" alt="HIMA RPL" />
                     {{-- <img src="{{ asset('img/smkTelkomMalang.png') }}" alt="SMK Telkom" /> --}}
                     <img src="{{ asset('img/himaITPolinema.png') }}" alt="HIMA IT Polinema" />
+                    <img src="{{ asset('img/logo_DPM1.png') }}" alt="DPM" />
+                    <img src="{{ asset('img/LOGO HIMATIF.png') }}" alt="HIMATIF UTM" />
+                    <img src="{{ asset('img/LOGO HMBD (2).png') }}" alt="HMBD TUS" />
+                    <img src="{{ asset('img/LOGO HMIF.png') }}" alt="HMIF TUS" />
+                    <img src="{{ asset('img/HMIT 3.png') }}" alt="HMIT ITS" />
+                    <img src="{{ asset('img/Logo HMSI - Media Partner.png') }}" alt="HMSI TUS" />
+                    <img src="{{ asset('img/logo hmtc.png') }}" alt="HMTC ITS" />
+                    <img src="{{ asset('img/LOGO HMTI TEL - U SBY NO BG (1).png') }}" alt="HMTI TEL - U SBY" />
+                    <img src="{{ asset('img/logo ntt.jpg.jpeg') }}" alt="IM NTT TUS" />
+                    <img src="{{ asset('img/Logo IMS Tel-U-1.png') }}" alt="IMS TUS" />
+                    <img src="{{ asset('img/Logo KMS.PNG') }}" alt="KMS" />
+                    <img src="{{ asset('img/@infosurabayans.jpeg') }}" alt="infosurabayans" />
+                    <img src="{{ asset('img/LOGO @INFOLOMBA (Untuk Background Poster Warna Gelap).png') }}" alt="infolomba" />
+                    <img src="{{ asset('img/IMG_20220727_233445_318.jpg') }}" alt="ikutevent" />
                 </div>
             </div>
         </div>

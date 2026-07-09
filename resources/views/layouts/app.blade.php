@@ -188,8 +188,8 @@
 
 <body>
     <!-- ==========================================
-         PRELOADER
-         ========================================== -->
+         PRELOADER (Disabled)
+         ========================================== 
     <div id="preloader">
         <div class="loader-inner">
             <div class="loader-circle"></div>
@@ -197,6 +197,7 @@
             <div class="loader-text">Loading CODE Challenge...</div>
         </div>
     </div>
+    -->
 
     <!-- Intro Countdown Overlay -->
     <div id="intro-countdown-overlay" class="intro-countdown-overlay" style="display: none;">

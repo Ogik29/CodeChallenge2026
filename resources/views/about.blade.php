@@ -48,17 +48,15 @@
 
                     <!-- Pilar Kompetisi -->
                     <div class="row pt-3 mx-0 mt-4">
-                        <div class="col-12 col-md-6 px-0 mb-3 mb-md-0">
-                            <div class="bg-success text-center p-4 h-100 d-flex flex-column justify-content-center premium-card shadow-sm"
-                                style="border: none;">
-                                <h6 class="text-uppercase text-white font-weight-bold mb-0">Keamanan<span
+                        <div class="col-12 col-md-6 mb-3 mb-md-0 pr-md-2">
+                            <div class="text-center pilar-card pilar-cyber">
+                                <h6 class="text-uppercase font-weight-bold mb-0">Keamanan<span
                                         class="d-block mt-2">Siber</span></h6>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 px-0">
-                            <div class="bg-primary text-center p-4 h-100 d-flex flex-column justify-content-center premium-card shadow-sm"
-                                style="border: none;">
-                                <h6 class="text-uppercase text-white font-weight-bold mb-0">Internet<span
+                        <div class="col-12 col-md-6 pl-md-2">
+                            <div class="text-center pilar-card pilar-iot">
+                                <h6 class="text-uppercase font-weight-bold mb-0">Internet<span
                                         class="d-block mt-2">of Things</span></h6>
                             </div>
                         </div>

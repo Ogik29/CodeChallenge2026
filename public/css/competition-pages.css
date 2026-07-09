@@ -111,8 +111,15 @@
 }
 
 @keyframes comp-glow-pulse {
-    0% { opacity: 0.15; transform: scale(1); }
-    100% { opacity: 0.3; transform: scale(1.02); }
+    0% {
+        opacity: 0.15;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0.3;
+        transform: scale(1.02);
+    }
 }
 
 /* Content Side */
@@ -140,8 +147,15 @@
 }
 
 @keyframes comp-badge-shine {
-    0%, 100% { box-shadow: 0 0 0 0 rgba(40, 120, 235, 0.1); }
-    50% { box-shadow: 0 0 20px 0 rgba(40, 120, 235, 0.15); }
+
+    0%,
+    100% {
+        box-shadow: 0 0 0 0 rgba(40, 120, 235, 0.1);
+    }
+
+    50% {
+        box-shadow: 0 0 20px 0 rgba(40, 120, 235, 0.15);
+    }
 }
 
 .comp-overview-badge i {
@@ -215,8 +229,13 @@
 }
 
 @keyframes comp-grid-move {
-    0% { transform: translate(0, 0); }
-    100% { transform: translate(60px, 60px); }
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(60px, 60px);
+    }
 }
 
 /* Glowing orbs */
@@ -234,8 +253,13 @@
 }
 
 @keyframes comp-orb-float {
-    0% { transform: translate(0, 0) scale(1); }
-    100% { transform: translate(-30px, 20px) scale(1.1); }
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    100% {
+        transform: translate(-30px, 20px) scale(1.1);
+    }
 }
 
 .comp-timeline-header {
@@ -374,6 +398,7 @@
     z-index: 2;
     transition: all 0.4s var(--comp-transition);
     overflow: hidden;
+    text-align: left; /* Ensure all text inside the card is left-aligned */
 }
 
 .comp-timeline-card::before {
@@ -432,14 +457,15 @@
     display: flex;
     align-items: center;
     gap: 6px;
+    justify-content: flex-start; /* Always align date to the start/left */
 }
 
 .comp-timeline-item:nth-child(odd) .comp-timeline-card .comp-timeline-date {
-    justify-content: flex-end;
+    justify-content: flex-start; /* Left align for odd items as well */
 }
 
 .comp-timeline-item:nth-child(odd) .comp-timeline-step {
-    float: right;
+    float: none; /* No float for step badge */
 }
 
 .comp-timeline-card .comp-timeline-date i {
@@ -572,6 +598,62 @@
 .comp-reward-card:hover::before {
     height: 6px;
 }
+
+/* ===== FEATURED (JUARA 1) CARD ===== */
+.comp-reward-card.featured-reward {
+    transform: scale(1.08);
+    box-shadow: 0 20px 55px rgba(245, 158, 11, 0.35), 0 0 0 2px rgba(245, 158, 11, 0.2);
+    background: linear-gradient(160deg, #fffbeb 0%, #ffffff 100%);
+    position: relative;
+    z-index: 2;
+}
+
+.comp-reward-card.featured-reward:hover {
+    transform: scale(1.10) translateY(-10px);
+    box-shadow: 0 30px 70px rgba(245, 158, 11, 0.45), 0 0 0 3px rgba(245, 158, 11, 0.3);
+}
+
+/* Crown Badge */
+.gold-special-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 14px;
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    border-radius: 50px;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.4);
+    animation: crownPulse 2.5s ease-in-out infinite;
+}
+
+.gold-special-badge i {
+    font-size: 0.78rem;
+    color: #fff5cc;
+    -webkit-text-fill-color: #fff5cc !important;
+    filter: none !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+}
+
+@keyframes crownPulse {
+    0%, 100% { box-shadow: 0 4px 12px rgba(245, 158, 11, 0.4); }
+    50%       { box-shadow: 0 4px 20px rgba(245, 158, 11, 0.65); }
+}
+
+/* On mobile: remove scale so all cards are same size */
+@media (max-width: 767px) {
+    .comp-reward-card.featured-reward {
+        transform: scale(1) !important;
+    }
+}
+
 
 /* Gold Card */
 .comp-reward-card.gold::before {
@@ -881,8 +963,15 @@
 }
 
 @keyframes comp-notice-pulse {
-    0%, 100% { box-shadow: 0 0 0 0 rgba(233, 30, 99, 0.1); }
-    50% { box-shadow: 0 0 20px 0 rgba(233, 30, 99, 0.15); }
+
+    0%,
+    100% {
+        box-shadow: 0 0 0 0 rgba(233, 30, 99, 0.1);
+    }
+
+    50% {
+        box-shadow: 0 0 20px 0 rgba(233, 30, 99, 0.15);
+    }
 }
 
 .comp-extend-notice .extend-badge {
