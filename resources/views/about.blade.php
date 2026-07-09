@@ -144,8 +144,8 @@
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const galleryImages = [
-            { src: "{{ asset('img/hiasan-1.jpg') }}", alt: 'pict C.O.D.E Challenge 1' },
-            { src: "{{ asset('img/hiasan-2.jpg') }}", alt: 'pict C.O.D.E Challenge 2' },
+            { src: "{{ asset('img/hiasan-1.JPG') }}", alt: 'pict C.O.D.E Challenge 1' },
+            { src: "{{ asset('img/hiasan-2.JPG') }}", alt: 'pict C.O.D.E Challenge 2' },
             { src: "{{ asset('img/kategori_mahasiswa.JPG') }}", alt: 'pict C.O.D.E Challenge 3' },
             { src: "{{ asset('img/explo (4).jpg') }}", alt: 'pict C.O.D.E Challenge 4' },
             { src: "{{ asset('img/explo (5).jpg') }}", alt: 'pict C.O.D.E Challenge 5' },
