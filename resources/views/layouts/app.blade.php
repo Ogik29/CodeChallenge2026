@@ -393,11 +393,11 @@
     <script src="{{ asset('lib/counterup/counterup.min.js') }}"></script>
     <script src="{{ asset('lib/owlcarousel/owl.carousel.min.js') }}"></script>
 
-    <!-- Template Javascript -->
-    <script src="{{ asset('js/main.js') }}"></script>
-
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="{{ asset('js/main.js') }}"></script>
     <script>
         AOS.init({
             once: true,
