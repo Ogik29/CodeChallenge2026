@@ -125,6 +125,7 @@
                 </div>
                 <div class="comp-timeline-item" data-aos="fade-left" data-aos-duration="600" data-aos-delay="800">
                     <div class="comp-timeline-card">
+                        <div class="comp-timeline-step">7</div>
                         <h6>Babak Final</h6>
                         <p class="comp-timeline-date"><i class="fas fa-clock"></i> 25 Oktober 2026</p>
                     </div>

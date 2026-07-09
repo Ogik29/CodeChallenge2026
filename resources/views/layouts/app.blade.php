@@ -226,6 +226,8 @@
 
     <script>
         (function() {
+            // Set to true to enable the intro countdown overlay, or false to bypass/disable it.
+            const enableCountdown = false;
             const countdownShown = sessionStorage.getItem('countdownShown');
             const preloader = document.getElementById('preloader');
             const countdownOverlay = document.getElementById('intro-countdown-overlay');
@@ -233,7 +235,7 @@
             const startContainer = document.getElementById('countdown-start-container');
             const animationContainer = document.getElementById('countdown-animation-container');
 
-            if (!countdownShown) {
+            if (enableCountdown && !countdownShown) {
                 if (preloader) preloader.style.display = 'none';
                 if (countdownOverlay) countdownOverlay.style.display = 'flex';
                 document.body.style.overflow = 'hidden';

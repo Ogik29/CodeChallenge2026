@@ -284,10 +284,6 @@
             <div data-aos="fade-up" data-aos-delay="200">
                 <h3 class="font-weight-bold mb-4">Media Partners</h3>
                 <div class="sponsor-grid">
-                    <img src="{{ asset('img/zonaLomba.jpg') }}" alt="Zona Lomba" />
-                    <img src="{{ asset('img/himaRPL.png') }}" alt="HIMA RPL" />
-                    {{-- <img src="{{ asset('img/smkTelkomMalang.png') }}" alt="SMK Telkom" /> --}}
-                    <img src="{{ asset('img/himaITPolinema.png') }}" alt="HIMA IT Polinema" />
                     <img src="{{ asset('img/logo_DPM1.png') }}" alt="DPM" />
                     <img src="{{ asset('img/LOGO HIMATIF.png') }}" alt="HIMATIF UTM" />
                     <img src="{{ asset('img/LOGO HMBD (2).png') }}" alt="HMBD TUS" />
