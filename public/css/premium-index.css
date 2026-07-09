@@ -237,25 +237,44 @@ h6 {
 
 /* Hero Section */
 .hero-section {
-  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  background: linear-gradient(140deg, #eef6ff 0%, #e8f4ff 40%, #f0eeff 100%);
   padding: 180px 0 100px 0;
   position: relative;
   overflow: hidden;
 }
 
+/* Animated gradient blobs */
 .hero-section::before {
   content: '';
   position: absolute;
-  top: -50%;
-  right: -10%;
-  width: 600px;
-  height: 600px;
+  top: -20%;
+  right: -8%;
+  width: 650px;
+  height: 650px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(13, 110, 253, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+  background: radial-gradient(circle, rgba(13, 110, 253, 0.12) 0%, rgba(255, 255, 255, 0) 70%);
   z-index: 0;
   pointer-events: none;
-  /* Prevent this decorative element from causing overflow */
-  overflow: hidden;
+  animation: blobFloat 8s ease-in-out infinite alternate;
+}
+
+.hero-section::after {
+  content: '';
+  position: absolute;
+  bottom: -10%;
+  left: -5%;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.08) 0%, transparent 70%);
+  z-index: 0;
+  pointer-events: none;
+  animation: blobFloat 10s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes blobFloat {
+  0%   { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(30px, -20px) scale(1.05); }
 }
 
 .hero-content {
@@ -328,6 +347,31 @@ h6 {
   box-shadow: 0 15px 25px rgba(13, 110, 253, 0.4);
   text-decoration: none;
 }
+
+.btn-modern-outline {
+  background: transparent;
+  color: var(--primary-color) !important;
+  border: 2px solid var(--primary-color);
+  border-radius: 50px;
+  padding: 10px 33px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.btn-modern-outline:hover {
+  background: rgba(13, 110, 253, 0.06);
+  border-color: var(--secondary-color);
+  color: var(--secondary-color) !important;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(13, 110, 253, 0.15);
+  text-decoration: none;
+}
+
 
 /* Redesigned Footer */
 .footer-premium {
@@ -403,14 +447,41 @@ h6 {
 .sponsor-grid img {
   height: 75px;
   object-fit: contain;
-  opacity: 1;
-  transition: all 0.3s ease;
+  opacity: 0.85;
+  transition: all 0.35s ease;
+  border-radius: 12px;
+  padding: 8px 14px;
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
 }
 
 .sponsor-grid img:hover {
-  transform: scale(1.1);
-  opacity: 0.85;
+  transform: scale(1.1) translateY(-4px);
+  opacity: 1;
+  box-shadow: 0 10px 30px rgba(13, 110, 253, 0.15);
 }
+
+/* Category section backgrounds */
+.Background-SMA {
+  background: linear-gradient(160deg, #f0f9ff 0%, #e8f4ff 100%) !important;
+}
+
+.Background-Mahasiswa {
+  background: linear-gradient(160deg, #f5f0ff 0%, #eef6ff 100%) !important;
+}
+
+/* Icon circles for category lists */
+.bg-primary.rounded-circle {
+  background: linear-gradient(135deg, #0d6efd, #00c6ff) !important;
+  box-shadow: 0 6px 18px rgba(13, 110, 253, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.bg-primary.rounded-circle:hover {
+  transform: scale(1.08);
+}
+
+
 
 /* Fix navbar z-index */
 .navbar-glass {
@@ -441,5 +512,46 @@ h6 {
     display: none !important;
   }
 }
+
+/* Pilar Kompetisi Cards in About page */
+.pilar-card {
+  border-radius: 16px !important;
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  transition: all 0.35s ease !important;
+  padding: 30px 20px !important;
+  text-decoration: none !important;
+}
+
+.pilar-card h6 {
+  font-family: 'Space Grotesk', 'Outfit', sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+
+.pilar-cyber {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(16, 185, 129, 0.03)) !important;
+  border-color: rgba(16, 185, 129, 0.2) !important;
+}
+.pilar-cyber h6 {
+  color: #10b981 !important;
+}
+.pilar-cyber:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(16, 185, 129, 0.15) !important;
+}
+
+.pilar-iot {
+  background: linear-gradient(135deg, rgba(13, 110, 253, 0.1), rgba(13, 110, 253, 0.03)) !important;
+  border-color: rgba(13, 110, 253, 0.2) !important;
+}
+.pilar-iot h6 {
+  color: #0d6efd !important;
+}
+.pilar-iot:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(13, 110, 253, 0.15) !important;
+}
+
 
 

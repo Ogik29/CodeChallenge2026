@@ -20,9 +20,8 @@
                             class="btn-modern mb-3 mb-sm-0 mr-sm-3">
                             Daftar Sekarang <i class="fas fa-arrow-right"></i>
                         </a>
-                        <a href="https://linktr.ee/guidebookcodex" class="btn btn-outline-primary"
-                            style="border-radius: 50px; padding: 12px 35px; font-weight: 600;">
-                            Guidebook <i class="fas fa-download ml-2"></i>
+                        <a href="https://linktr.ee/guidebookcodex" class="btn-modern-outline">
+                            Guidebook <i class="fas fa-download"></i>
                         </a>
                     </div>
                 </div>

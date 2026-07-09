@@ -37,8 +37,8 @@
 
 <body>
     <!-- ==========================================
-         PRELOADER
-         ========================================== -->
+         PRELOADER (Disabled)
+         ========================================== 
     <div id="preloader">
         <div class="loader-inner">
             <div class="loader-circle"></div>
@@ -46,6 +46,7 @@
             <div class="loader-text">Loading CODE Challenge...</div>
         </div>
     </div>
+    -->
 
     <!-- ==========================================
          NAVBAR

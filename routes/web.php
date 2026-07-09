@@ -33,3 +33,5 @@ Route::get('/lkti-sma-smk', function () {
 Route::get('/ctf-mahasiswa', function () {
     return view('ctfMahasiswa');
 })->name('ctf.mahasiswa');
+
+
